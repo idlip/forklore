@@ -2,7 +2,7 @@ import tailwindcss from "@tailwindcss/vite";
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  ssr: true,
+  ssr: false,
   devtools: { enabled: true },
   modules: ["@nuxt/content", "@nuxtjs/color-mode"],
   css: ["~/assets/css/main.css"],
@@ -33,7 +33,7 @@ export default defineNuxtConfig({
   routeRules: {
     "/": { prerender: false },
   },
-  compatibilityDate: "2024-09-19",
+  compatibilityDate: "2025-05-15",
   nitro: {
     preset: "cloudflare_module",
     cloudflare: {
