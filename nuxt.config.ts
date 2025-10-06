@@ -3,7 +3,6 @@ import tailwindcss from "@tailwindcss/vite";
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   ssr: true,
-  compatibilityDate: "2025-05-15",
   devtools: { enabled: true },
   modules: ["@nuxt/content", "@nuxtjs/color-mode"],
   css: ["~/assets/css/main.css"],
@@ -15,6 +14,8 @@ export default defineNuxtConfig({
   },
   app: {
     head: {
+      viewport: 'width=device-width, initial-scale=1',
+
       htmlAttrs: {
         lang: "en",
       },
@@ -29,12 +30,11 @@ export default defineNuxtConfig({
       ],
     },
   },
-  routeRules: {
-    "/": { prerender: false },
-  },
+  compatibilityDate: "2025-05-15",
   nitro: {
-    prerender: {
+  prerender: {
+      crawlLinks: true,
       routes: ['/rss']
     }
-  },
+  }
 });
