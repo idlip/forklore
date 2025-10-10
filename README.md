@@ -38,3 +38,4 @@ To get started with local development, follow these steps:
 - Open this directory in terminal, and run `yarn install`
 - Start development server by running `yarn run dev`
 - The website should start running in `http://localhost:3000`
+
