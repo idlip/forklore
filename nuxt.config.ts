@@ -13,6 +13,7 @@ export default defineNuxtConfig({
     storage: 'cookie',
   },
   app: {
+    baseURL: '/forklore/',
     head: {
       viewport: 'width=device-width, initial-scale=1',
 
